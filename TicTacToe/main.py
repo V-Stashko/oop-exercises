@@ -59,6 +59,7 @@ class TicTacToe:
         return [(i, j) for i in range(3) for j in range(3) if bool(self.pole[i][j])]
 
     def human_go(self):
+        """Запрос хода игрока."""
         while True:
             i = input('Введите индекс строки (0 - 2): ')
             j = input('Введите индекс столбца (0 - 2): ')
